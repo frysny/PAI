@@ -1,0 +1,59 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Ankieta</title>
+    <link href="style/Style.css" rel="stylesheet" type="text/css" />
+    <script src="js/Walidacja.js"></script>
+</head>
+<body>
+    <div id="ankieta">
+        <h1>Ankieta</h1>
+       <form name="ankietaSklepu" onsubmit="return sprawdz(this)">
+        <div class="row">
+            <span class="label">Imię:</span><span class="formw"><input type="text" name="imie" /></span>
+        </div>
+        <div class="row">
+            <span class="label">E-mail:</span><span class="formw"><input type="text" name="email" /></span>
+        </div>
+        <div class="spacer" />
+        <div class="row">
+            <span class="label bold">Adres:</span></div>
+        <div class="grupa">
+            <div class="row">
+                <span class="label">Ulica:</span><span class="formw"><input type="text" /></span>
+            </div>
+            <div class="row">
+                <span class="label">Numer domu:</span><span class="formw"><input type="text" name="numerDomu" /></span>
+            </div>
+            <div class="row">
+                <span class="label">Numer mieszkania:</span><span class="formw"><input type="text"></span>
+            </div>
+            <div class="row">
+                <span class="label">Kod pocztowy:</span><span class="formw"><input type="text" name="kodPocztowy"></span>
+            </div>
+            <div class="row">
+                <span class="label">Miejscowość:</span><span class="formw"><input type="text" name="miejscowosc" /></span>
+            </div>
+        </div>
+        <div class="row">
+            <span class="label">Wzrost:</span><span class="formw"><input type="text" name="wzrost" /></span>
+        </div>
+        <div class="row">
+            <span class="label bold">Chcę wydać:</span>
+        </div>
+        <div class="grupa">
+            <div class="row">
+                <span class="label">Od:</span><span class="formw"><input type="text" name="cenaOd" /></span>
+            </div>
+            <div class="row">
+                <span class="label">Do:</span><span class="formw"><input type="text" name="cenaDo" /></span>
+            </div>
+        </div>
+        <div class="spacer" />
+        <center>
+            <input type="submit" value="Wyślij" /></center>
+        </form>
+    </div>
+	<script src="https://code.jquery.com.jquery-2.1.4.min.js"></script>
+</body>
+</html>
